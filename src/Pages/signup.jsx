@@ -74,7 +74,7 @@ const Signup = () => {
       try {
         if (!isLogin) {
           // Signup logic
-          const response = await axios.post("http://localhost:8081/signup", {
+          const response = await axios.post("https://quize-backend.vercel.app/signup", {
             name,
             email,
             password,
@@ -88,7 +88,7 @@ const Signup = () => {
           }
         } else {
           // Login logic
-          const response = await axios.post("http://localhost:8081/login", {
+          const response = await axios.post("https://quize-backend.vercel.app/login", {
             email,
             password,
           });
